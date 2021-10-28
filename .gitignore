@@ -1,5 +1,5 @@
 #nodeModules
 node_modules
-.postcss.config.js
-.tailwind.config.js
+postcss.config.js
+tailwind.config.js
 scss
