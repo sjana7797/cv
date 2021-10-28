@@ -1,0 +1,25 @@
+/* Font size for large devices */
+
+@media screen and (min-width: 968px) {
+    $big-font-size: 3rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: 0.875rem;
+    $smaller-font-size: 0.813rem;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $primary-body-color;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+    }
+}

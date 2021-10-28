@@ -1,0 +1,53 @@
+.nav {
+    max-width: 986px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        @include navLogoToggle;
+        &:hover {
+            color: $primary;
+        }
+    }
+    &__toggle {
+        @include navLogoToggle;
+        font-size: 1.1rem;
+        cursor: pointer;
+        &:hover {
+            color: $primary;
+        }
+    }
+    &__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: $small-font-size;
+        color: $primary-title-color;
+        font-weight: $font-medium;
+        &:hover {
+            color: $primary;
+        }
+    }
+    &__icon {
+        font-size: 1.2rem;
+    }
+    &__close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.3rem;
+        font-size: 1.5rem;
+        color: $primary;
+        &:hover {
+            color: $primary-alt;
+        }
+    }
+}
+
+.show_menu {
+    bottom: 0;
+}
